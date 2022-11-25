@@ -13,7 +13,6 @@ import lime.app.Application;
 import openfl.events.UncaughtErrorEvent;
 import haxe.CallStack;
 import haxe.io.Path;
-import Discord.DiscordClient;
 import flixel.system.scaleModes.PixelPerfectScaleMode;
 import sys.FileSystem;
 import sys.io.File;
@@ -155,7 +154,6 @@ class Main extends Sprite
 		Sys.println("Crash dump saved in " + Path.normalize(path));
 
 		Application.current.window.alert(errMsg, "Error!");
-		DiscordClient.shutdown();
 		Sys.exit(1);
 	}
 
@@ -178,7 +176,6 @@ class Main extends Sprite
 	
 			Sys.println(errMsg);
 			Application.current.window.alert(errMsg, "Error!");
-			DiscordClient.shutdown();
 			Sys.exit(1);
 		}
 }

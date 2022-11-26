@@ -44,12 +44,12 @@ jobs:
           haxelib install hxcpp > /dev/null
           haxelib --quiet install lime 7.9.0
           haxelib --quiet install openfl 9.1.0
-          haxelib --quiet install flixel 4.11.0
+          haxelib --quiet install flixel 
           haxelib run lime setup flixel
           haxelib --quiet install flixel-tools
           haxelib --quiet install flixel-ui
           haxelib --quiet install hscript 2.5.0
-          haxelib --quiet install flixel-addons 2.12.1
+          haxelib --quiet install flixel-addons 
           haxelib --quiet install hxCodec
           haxelib --quiet git spine https://github.com/jeremyfa/spine-hx.git
           haxelib git linc_luajit https://github.com/Sirox228/linc_luajit.git
